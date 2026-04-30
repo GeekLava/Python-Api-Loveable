@@ -19,7 +19,7 @@ app = FastAPI(title="PyTest Lab Executor")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],   # tighten to your Lovable domain once deployed
-    allow_methods=["POST"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
